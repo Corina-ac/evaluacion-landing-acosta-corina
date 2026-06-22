@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros - NexoPlay</title>
+    <link rel="icon" href="../../img/favicon.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../../css/general.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <style>
+        .mision-vision {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        .mv-item {
+            background: var(--color-claro);
+            padding: 2.5rem 2rem;
+            border-radius: var(--borde-redondeado);
+            box-shadow: var(--sombra-suave);
+            text-align: center;
+            border-top: 4px solid var(--color-principal);
+        }
+
+        .mv-item i {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .mv-item h3 {
+            margin-bottom: 1rem;
+        }
+
+        @media (min-width: 768px) {
+            .mision-vision {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .valores-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .valor-item {
+            text-align: center;
+            padding: 1.5rem;
+            background: var(--color-claro);
+            border-radius: var(--borde-redondeado);
+            box-shadow: var(--sombra-suave);
+            transition: var(--transicion-rapida);
+        }
+
+        .valor-item:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md">
+            <div class="container">
+                <a class="navbar-brand" href="../../index.html"><i class="fas fa-gamepad me-2"></i>Nexo<span>Play</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="../../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../servicios/servicios.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../galeria/galeria.html">Galería</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../contacto/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Sobre Nosotros</h1>
+                <p>Conoce nuestra historia, misión y pasión por los videojuegos.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-md-6">
+                        <img src="../../img/nosotros.jpg" alt="Equipo de NexoPlay en su oficina" class="rounded-4 shadow" style="width: 100%;">
+                    </div>
+                    <div class="col-md-6">
+                        <h2 style="text-align: left;">Nuestra Historia</h2>
+                        <p>NexoPlay nació en 2020 de la pasión de un grupo de amigos por los videojuegos. Lo que comenzó como una pequeña comunidad de jugadores se transformó en una tienda digital dedicada a ofrecer los mejores títulos del mercado.</p>
+                        <p>Hoy, con más de 50,000 clientes satisfechos y un catálogo que supera los 1,000 juegos, somos un referente en la venta de videojuegos digitales en la región.</p>
+                        <p>Creemos en el poder de los videojuegos para conectar personas, contar historias increíbles y crear experiencias inolvidables.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fondo-oscuro">
+            <div class="container">
+                <h2>Misión y Visión</h2>
+                <div class="mision-vision">
+                    <article class="mv-item">
+                        <i class="fas fa-bullseye" style="color: var(--color-principal);"></i>
+                        <h3>Misión</h3>
+                        <p>Ofrecer a los gamers los mejores videojuegos y accesorios a precios competitivos, brindando una experiencia de compra rápida, segura y con atención personalizada.</p>
+                    </article>
+                    <article class="mv-item">
+                        <i class="fas fa-eye" style="color: var(--color-secundario);"></i>
+                        <h3>Visión</h3>
+                        <p>Ser la tienda de videojuegos digitales líder en Latinoamérica, reconocida por nuestra calidad, innovación y compromiso con la comunidad gamer.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2>Nuestros Valores</h2>
+                <div class="valores-grid">
+                    <div class="valor-item">
+                        <i class="fas fa-heart fa-2x" style="color: var(--color-principal); margin-bottom: 1rem;"></i>
+                        <h5>Pasión</h5>
+                        <p>Amamos los videojuegos y eso se refleja en cada servicio que ofrecemos.</p>
+                    </div>
+                    <div class="valor-item">
+                        <i class="fas fa-handshake fa-2x" style="color: var(--color-principal); margin-bottom: 1rem;"></i>
+                        <h5>Confianza</h5>
+                        <p>La transparencia y honestidad son la base de nuestra relación con los clientes.</p>
+                    </div>
+                    <div class="valor-item">
+                        <i class="fas fa-rocket fa-2x" style="color: var(--color-principal); margin-bottom: 1rem;"></i>
+                        <h5>Innovación</h5>
+                        <p>Siempre buscamos nuevas formas de mejorar la experiencia gamer.</p>
+                    </div>
+                    <div class="valor-item">
+                        <i class="fas fa-users fa-2x" style="color: var(--color-principal); margin-bottom: 1rem;"></i>
+                        <h5>Comunidad</h5>
+                        <p>Creemos en el poder de los videojuegos para unir personas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5><i class="fas fa-gamepad me-2"></i>NexoPlay</h5>
+                    <p>Tu tienda de videojuegos de confianza.</p>
+                    <div class="redes-sociales">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>Enlaces rápidos</h5>
+                    <ul>
+                        <li><a href="../../index.html"><i class="fas fa-chevron-right me-2"></i>Inicio</a></li>
+                        <li><a href="../servicios/servicios.html"><i class="fas fa-chevron-right me-2"></i>Servicios</a></li>
+                        <li><a href="../galeria/galeria.html"><i class="fas fa-chevron-right me-2"></i>Galería</a></li>
+                        <li><a href="nosotros.html"><i class="fas fa-chevron-right me-2"></i>Nosotros</a></li>
+                        <li><a href="../contacto/contacto.html"><i class="fas fa-chevron-right me-2"></i>Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt me-2"></i>Quito, Ecuador</li>
+                        <li><i class="fas fa-phone me-2"></i>+593 99 999 9999</li>
+                        <li><i class="fas fa-envelope me-2"></i>info@nexoplay.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 NexoPlay. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>

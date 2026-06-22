@@ -1,0 +1,368 @@
+/* ===== HERO SECTION ===== */
+.hero {
+    background: linear-gradient(135deg, #0d001a 0%, var(--color-oscuro) 50%, #001a33 100%);
+    padding: 3rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(106, 13, 173, 0.1) 0%, transparent 60%);
+    animation: pulseHero 8s ease-in-out infinite;
+}
+
+@keyframes pulseHero {
+    0%, 100% { transform: scale(1); opacity: 0.5; }
+    50% { transform: scale(1.2); opacity: 1; }
+}
+
+.hero-contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-texto h1 {
+    font-size: 2rem;
+    color: var(--color-claro);
+    margin-bottom: 1rem;
+}
+
+.hero-texto h1 span {
+    color: var(--color-secundario);
+}
+
+.hero-texto p {
+    font-size: 1.05rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 1.5rem;
+}
+
+.hero-imagen {
+    border-radius: var(--borde-redondeado);
+    box-shadow: var(--sombra-fuerte);
+    max-width: 100%;
+}
+
+.hero-imagen img {
+    border-radius: var(--borde-redondeado);
+    width: 100%;
+}
+
+/* ===== BENEFITS SECTION ===== */
+#beneficios {
+    background-color: var(--color-claro);
+}
+
+.beneficio-item {
+    text-align: center;
+    padding: 2rem 1.5rem;
+    border-radius: var(--borde-redondeado);
+    transition: var(--transicion-rapida);
+}
+
+.beneficio-item:hover {
+    background: rgba(106, 13, 173, 0.05);
+}
+
+.beneficio-icono {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1.2rem;
+    background: linear-gradient(135deg, var(--color-principal), var(--color-secundario));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--color-claro);
+    transition: var(--transicion-rapida);
+}
+
+.beneficio-item:hover .beneficio-icono {
+    transform: rotateY(180deg);
+}
+
+.beneficio-item h3 {
+    color: var(--color-principal);
+    margin-bottom: 0.8rem;
+}
+
+.beneficio-item p {
+    color: var(--color-gris);
+    font-size: 0.95rem;
+}
+
+/* ===== SERVICES / PRODUCTS SECTION ===== */
+#productos {
+    background: var(--color-fondo);
+}
+
+.tarjeta-producto {
+    height: 100%;
+    border: none;
+    border-radius: var(--borde-redondeado);
+    overflow: hidden;
+    box-shadow: var(--sombra-suave);
+    transition: var(--transicion-rapida);
+}
+
+.tarjeta-producto:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--sombra-fuerte);
+}
+
+.tarjeta-producto .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.tarjeta-producto .card-body {
+    padding: 1.5rem;
+}
+
+.tarjeta-producto .card-title {
+    color: var(--color-principal);
+    font-weight: 700;
+}
+
+.tarjeta-producto .card-text {
+    color: var(--color-gris);
+    font-size: 0.9rem;
+}
+
+.tarjeta-producto .precio {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--color-secundario);
+    display: block;
+    margin: 0.8rem 0;
+}
+
+.tarjeta-producto .btn {
+    width: 100%;
+    border-radius: 50px;
+}
+
+/* ===== INFORMATIVE SECTION ===== */
+#nosotros {
+    background: var(--color-claro);
+}
+
+.info-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.info-imagen img {
+    border-radius: var(--borde-redondeado);
+    box-shadow: var(--sombra-suave);
+    width: 100%;
+}
+
+.info-texto h3 {
+    color: var(--color-principal);
+    margin-bottom: 1rem;
+}
+
+.info-texto p {
+    color: var(--color-gris);
+}
+
+/* ===== CALL TO ACTION ===== */
+#cta {
+    background: linear-gradient(135deg, var(--color-principal), var(--color-secundario));
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+#cta h2 {
+    color: var(--color-claro);
+    font-size: 2rem;
+}
+
+#cta p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+#cta .btn-personalizado {
+    background: var(--color-claro);
+    color: var(--color-principal);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+#cta .btn-personalizado:hover {
+    background: var(--color-oscuro);
+    color: var(--color-claro);
+}
+
+/* ===== FORM SECTION ===== */
+#contacto {
+    background: var(--color-fondo);
+}
+
+.formulario-contacto {
+    background: var(--color-claro);
+    padding: 2rem;
+    border-radius: var(--borde-redondeado);
+    box-shadow: var(--sombra-suave);
+}
+
+.formulario-contacto .form-label {
+    font-weight: 600;
+    color: var(--color-principal);
+}
+
+.formulario-contacto .form-control {
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 10px 15px;
+    transition: var(--transicion-rapida);
+}
+
+.formulario-contacto .form-control:focus {
+    border-color: var(--color-principal);
+    box-shadow: 0 0 0 0.2rem rgba(106, 13, 173, 0.15);
+}
+
+.formulario-contacto textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* ===== PAGE HEADER ===== */
+.page-header {
+    background: linear-gradient(135deg, var(--color-oscuro), var(--color-principal));
+    color: var(--color-claro);
+    text-align: center;
+    padding: 4rem 1rem 3rem;
+}
+
+.page-header h1 {
+    color: var(--color-claro);
+    margin-bottom: 0.5rem;
+}
+
+.page-header p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* ===== MOBILE FIRST - MÓVIL (390px) ===== */
+/* Los estilos base ya están definidos para móvil */
+
+/* ===== TABLETA (768px) ===== */
+@media (min-width: 768px) {
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+    }
+
+    .hero {
+        padding: 5rem 0;
+    }
+
+    .hero-contenido {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .hero-texto {
+        flex: 1;
+    }
+
+    .hero-texto h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-imagen {
+        flex: 1;
+    }
+
+    .beneficio-item {
+        padding: 2rem;
+    }
+
+    .info-grid {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .info-imagen, .info-texto {
+        flex: 1;
+    }
+
+    .formulario-contacto {
+        padding: 3rem;
+    }
+
+    #cta {
+        padding: 5rem 2rem;
+    }
+
+    #cta h2 {
+        font-size: 2.5rem;
+    }
+}
+
+/* ===== COMPUTADORA (992px+) ===== */
+@media (min-width: 992px) {
+    h1 {
+        font-size: 3.2rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    section {
+        padding: 5rem 0;
+    }
+
+    .hero {
+        padding: 6rem 0;
+    }
+
+    .hero-texto h1 {
+        font-size: 3rem;
+    }
+
+    .hero-texto p {
+        font-size: 1.2rem;
+    }
+
+    .beneficio-item {
+        padding: 2.5rem 2rem;
+    }
+
+    #cta h2 {
+        font-size: 3rem;
+    }
+
+    .container-custom {
+        max-width: 1140px;
+    }
+}
+
+/* ===== COMPUTADORA GRANDE (1200px+) ===== */
+@media (min-width: 1200px) {
+    .hero-texto h1 {
+        font-size: 3.5rem;
+    }
+}

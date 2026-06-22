@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - NexoPlay</title>
+    <link rel="icon" href="../../img/favicon.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../../css/general.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <style>
+        .contacto-flex {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3rem;
+        }
+
+        .contacto-flex > * {
+            flex: 1 1 45%;
+        }
+
+        @media (max-width: 767px) {
+            .contacto-flex > * {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md">
+            <div class="container">
+                <a class="navbar-brand" href="../../index.html"><i class="fas fa-gamepad me-2"></i>Nexo<span>Play</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="../../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../servicios/servicios.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../galeria/galeria.html">Galería</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../nosotros/nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Contáctanos</h1>
+                <p>Estamos aquí para ayudarte. Envíanos un mensaje y te responderemos a la brevedad.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="contacto-flex">
+                    <div>
+                        <h2>Ponte en contacto</h2>
+                        <p class="mb-4">¿Tienes alguna pregunta sobre nuestros productos, necesitas ayuda con una compra o quieres saber más sobre nosotros? Completa el formulario y te atenderemos personalmente.</p>
+                        <div class="mb-3">
+                            <p><i class="fas fa-map-marker-alt me-3" style="color: var(--color-principal);"></i> Av. República, Quito - Ecuador</p>
+                            <p><i class="fas fa-phone me-3" style="color: var(--color-principal);"></i> +593 99 999 9999</p>
+                            <p><i class="fas fa-envelope me-3" style="color: var(--color-principal);"></i> soporte@nexoplay.com</p>
+                        </div>
+                    </div>
+                    <div>
+                        <form class="formulario-contacto" action="#" method="GET">
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre completo</label>
+                                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="tu@correo.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefono" class="form-label">Teléfono</label>
+                                <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="+593 99 999 9999">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensaje" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn-personalizado w-100">Enviar mensaje <i class="fas fa-paper-plane ms-2"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5><i class="fas fa-gamepad me-2"></i>NexoPlay</h5>
+                    <p>Tu tienda de videojuegos de confianza.</p>
+                    <div class="redes-sociales">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>Enlaces rápidos</h5>
+                    <ul>
+                        <li><a href="../../index.html"><i class="fas fa-chevron-right me-2"></i>Inicio</a></li>
+                        <li><a href="../servicios/servicios.html"><i class="fas fa-chevron-right me-2"></i>Servicios</a></li>
+                        <li><a href="../galeria/galeria.html"><i class="fas fa-chevron-right me-2"></i>Galería</a></li>
+                        <li><a href="../nosotros/nosotros.html"><i class="fas fa-chevron-right me-2"></i>Nosotros</a></li>
+                        <li><a href="contacto.html"><i class="fas fa-chevron-right me-2"></i>Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt me-2"></i>Quito, Ecuador</li>
+                        <li><i class="fas fa-phone me-2"></i>+593 99 999 9999</li>
+                        <li><i class="fas fa-envelope me-2"></i>info@nexoplay.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 NexoPlay. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>

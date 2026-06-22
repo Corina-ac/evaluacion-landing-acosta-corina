@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexoPlay - Tienda de Videojuegos</title>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+    <!-- HEADER Y NAVEGACIÓN -->
+    <header>
+        <nav class="navbar navbar-expand-md">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><i class="fas fa-gamepad me-2"></i>Nexo<span>Play</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/servicios/servicios.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/galeria/galeria.html">Galería</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/nosotros/nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/contacto/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero" id="inicio">
+            <div class="container">
+                <div class="hero-contenido">
+                    <div class="hero-texto">
+                        <h1>Vive la <span>experiencia</span> gamer definitiva</h1>
+                        <p>Descubre los mejores videojuegos, accesorios y contenido exclusivo para llevar tu juego al siguiente nivel.</p>
+                        <a href="#productos" class="btn-personalizado">Explorar ahora <i class="fas fa-arrow-right ms-2"></i></a>
+                    </div>
+                    <div class="hero-imagen">
+                        <img src="img/hero-gaming.jpg" alt="Jugador profesional de videojuegos en setup gaming con luces RGB">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BENEFITS SECTION -->
+        <section id="beneficios">
+            <div class="container">
+                <h2>¿Por qué elegir NexoPlay?</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <article class="beneficio-item">
+                            <div class="beneficio-icono">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <h3>Entrega Inmediata</h3>
+                            <p>Descarga tus juegos al instante después de la compra. Sin esperas, sin demoras. Comienza a jugar en segundos.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="beneficio-item">
+                            <div class="beneficio-icono">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3>Garantía Total</h3>
+                            <p>Todos nuestros productos cuentan con garantía de satisfacción. Si no te gusta, te devolvemos tu dinero sin preguntas.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="beneficio-item">
+                            <div class="beneficio-icono">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <h3>Soporte 24/7</h3>
+                            <p>Nuestro equipo de soporte está disponible las 24 horas del día para ayudarte con cualquier inconveniente o consulta.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRODUCTS / SERVICES SECTION -->
+        <section id="productos">
+            <div class="container">
+                <h2>Nuestros Productos</h2>
+                <div class="row g-4">
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <article class="tarjeta-producto card">
+                            <img src="img/juego1.jpg" class="card-img-top" alt="Portada del juego CyberStorm X">
+                            <div class="card-body">
+                                <h5 class="card-title">CyberStorm X</h5>
+                                <p class="card-text">Juego de acción y estrategia ambientado en un futuro distópico.</p>
+                                <span class="precio">$49.99</span>
+                                <a href="#" class="btn btn-personalizado">Comprar ahora</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <article class="tarjeta-producto card">
+                            <img src="img/juego2.jpg" class="card-img-top" alt="Portada del juego Racing Legends">
+                            <div class="card-body">
+                                <h5 class="card-title">Racing Legends</h5>
+                                <p class="card-text">El simulador de carreras más realista con gráficos de última generación.</p>
+                                <span class="precio">$59.99</span>
+                                <a href="#" class="btn btn-personalizado">Comprar ahora</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <article class="tarjeta-producto card">
+                            <img src="img/juego3.jpg" class="card-img-top" alt="Portada del juego Shadow Realm">
+                            <div class="card-body">
+                                <h5 class="card-title">Shadow Realm</h5>
+                                <p class="card-text">RPG de mundo abierto con una narrativa profunda y envolvente.</p>
+                                <span class="precio">$69.99</span>
+                                <a href="#" class="btn btn-personalizado">Comprar ahora</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <article class="tarjeta-producto card">
+                            <img src="img/juego4.jpg" class="card-img-top" alt="Portada del juego Pixel Warriors">
+                            <div class="card-body">
+                                <h5 class="card-title">Pixel Warriors</h5>
+                                <p class="card-text">Juego multijugador retro con mecánicas modernas y competitivas.</p>
+                                <span class="precio">$29.99</span>
+                                <a href="#" class="btn btn-personalizado">Comprar ahora</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INFORMATIVE SECTION -->
+        <section id="nosotros">
+            <div class="container">
+                <h2>Sobre NexoPlay</h2>
+                <div class="info-grid">
+                    <div class="info-imagen">
+                        <img src="img/about-us.jpg" alt="Equipo de NexoPlay trabajando en la tienda gaming">
+                    </div>
+                    <div class="info-texto">
+                        <h3>Más que una tienda, una comunidad</h3>
+                        <p>En NexoPlay somos apasionados por los videojuegos. Nacimos de la idea de crear un espacio donde los gamers encuentren todo lo que necesitan para disfrutar al máximo su experiencia.</p>
+                        <p>Desde 2020, hemos crecido hasta convertirnos en una de las tiendas digitales más confiables de la región, con más de 50,000 clientes satisfechos y un catálogo de más de 1,000 títulos.</p>
+                        <p>Nuestra misión es simple: ofrecer los mejores videojuegos al mejor precio, con la mejor atención al cliente. Porque sabemos que cada partida importa.</p>
+                        <a href="pages/nosotros/nosotros.html" class="btn-personalizado">Conócenos más <i class="fas fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CALL TO ACTION -->
+        <section id="cta">
+            <div class="container">
+                <h2>¿Listo para llevar tu juego al siguiente nivel?</h2>
+                <p>Únete a la comunidad NexoPlay y recibe ofertas exclusivas, lanzamientos anticipados y contenido especial para miembros.</p>
+                <a href="pages/contacto/contacto.html" class="btn-personalizado">Regístrate ahora <i class="fas fa-user-plus ms-2"></i></a>
+            </div>
+        </section>
+
+        <!-- FORM SECTION -->
+        <section id="contacto">
+            <div class="container">
+                <h2>Contáctanos</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <form class="formulario-contacto" action="#" method="GET">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="nombre" class="form-label">Nombre completo</label>
+                                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Correo electrónico</label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Ingresa tu correo" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="asunto" class="form-label">Asunto</label>
+                                    <input type="text" class="form-control" id="asunto" name="asunto" placeholder="¿Sobre qué deseas consultar?" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="mensaje" class="form-label">Mensaje</label>
+                                    <textarea class="form-control" id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn-personalizado">Enviar mensaje <i class="fas fa-paper-plane ms-2"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5><i class="fas fa-gamepad me-2"></i>NexoPlay</h5>
+                    <p>Tu tienda de videojuegos de confianza. Los mejores títulos, los mejores precios.</p>
+                    <div class="redes-sociales">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>Enlaces rápidos</h5>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-chevron-right me-2"></i>Inicio</a></li>
+                        <li><a href="pages/servicios/servicios.html"><i class="fas fa-chevron-right me-2"></i>Servicios</a></li>
+                        <li><a href="pages/galeria/galeria.html"><i class="fas fa-chevron-right me-2"></i>Galería</a></li>
+                        <li><a href="pages/nosotros/nosotros.html"><i class="fas fa-chevron-right me-2"></i>Nosotros</a></li>
+                        <li><a href="pages/contacto/contacto.html"><i class="fas fa-chevron-right me-2"></i>Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt me-2"></i>Quito, Ecuador</li>
+                        <li><i class="fas fa-phone me-2"></i>+593 99 999 9999</li>
+                        <li><i class="fas fa-envelope me-2"></i>info@nexoplay.com</li>
+                        <li><i class="fas fa-clock me-2"></i>Lun - Dom: 24/7</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 NexoPlay. Todos los derechos reservados. Desarrollado por Corina Acosta.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
